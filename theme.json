@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#48aaad"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#fabe50"
+        },
+        {
+          "name": "Citybreak Teal 100",
+          "slug": "citybreakteal-100",
+          "color": "#daeeef"
+        },
+        {
+          "name": "Citybreak Teal 200",
+          "slug": "citybreakteal-200",
+          "color": "#b6ddde"
+        },
+        {
+          "name": "Citybreak Teal 300",
+          "slug": "citybreakteal-300",
+          "color": "#91ccce"
+        },
+        {
+          "name": "Citybreak Teal 400",
+          "slug": "citybreakteal-400",
+          "color": "#6dbbbd"
+        },
+        {
+          "name": "Citybreak Teal 500",
+          "slug": "citybreakteal-500",
+          "color": "#48aaad"
+        },
+        {
+          "name": "Citybreak Teal 600",
+          "slug": "citybreakteal-600",
+          "color": "#3a888a"
+        },
+        {
+          "name": "Citybreak Teal 700",
+          "slug": "citybreakteal-700",
+          "color": "#2b6668"
+        },
+        {
+          "name": "Citybreak Teal 800",
+          "slug": "citybreakteal-800",
+          "color": "#1d4445"
+        },
+        {
+          "name": "Citybreak Teal 900",
+          "slug": "citybreakteal-900",
+          "color": "#0e2223"
+        },
+        {
+          "name": "Citybreak Orange 100",
+          "slug": "citybreakorange-100",
+          "color": "#fef2dc"
+        },
+        {
+          "name": "Citybreak Orange 200",
+          "slug": "citybreakorange-200",
+          "color": "#fde5b9"
+        },
+        {
+          "name": "Citybreak Orange 300",
+          "slug": "citybreakorange-300",
+          "color": "#fcd896"
+        },
+        {
+          "name": "Citybreak Orange 400",
+          "slug": "citybreakorange-400",
+          "color": "#fbcb73"
+        },
+        {
+          "name": "Citybreak Orange 500",
+          "slug": "citybreakorange-500",
+          "color": "#fabe50"
+        },
+        {
+          "name": "Citybreak Orange 600",
+          "slug": "citybreakorange-600",
+          "color": "#c89840"
+        },
+        {
+          "name": "Citybreak Orange 700",
+          "slug": "citybreakorange-700",
+          "color": "#967230"
+        },
+        {
+          "name": "Citybreak Orange 800",
+          "slug": "citybreakorange-800",
+          "color": "#644c20"
+        },
+        {
+          "name": "Citybreak Orange 900",
+          "slug": "citybreakorange-900",
+          "color": "#322610"
+        },
+        {
+          "name": "Citybreak Success 100",
+          "slug": "citybreaksuccess-100",
+          "color": "#d9efe3"
+        },
+        {
+          "name": "Citybreak Success 200",
+          "slug": "citybreaksuccess-200",
+          "color": "#b3dec7"
+        },
+        {
+          "name": "Citybreak Success 300",
+          "slug": "citybreaksuccess-300",
+          "color": "#8cceab"
+        },
+        {
+          "name": "Citybreak Success 400",
+          "slug": "citybreaksuccess-400",
+          "color": "#66bd8f"
+        },
+        {
+          "name": "Citybreak Success 500",
+          "slug": "citybreaksuccess-500",
+          "color": "#40ad73"
+        },
+        {
+          "name": "Citybreak Success 600",
+          "slug": "citybreaksuccess-600",
+          "color": "#338a5c"
+        },
+        {
+          "name": "Citybreak Success 700",
+          "slug": "citybreaksuccess-700",
+          "color": "#266845"
+        },
+        {
+          "name": "Citybreak Success 800",
+          "slug": "citybreaksuccess-800",
+          "color": "#1a452e"
+        },
+        {
+          "name": "Citybreak Success 900",
+          "slug": "citybreaksuccess-900",
+          "color": "#0d2317"
+        },
+        {
+          "name": "Citybreak Error 100",
+          "slug": "citybreakerror-100",
+          "color": "#fee8e6"
+        },
+        {
+          "name": "Citybreak Error 200",
+          "slug": "citybreakerror-200",
+          "color": "#fdd1cd"
+        },
+        {
+          "name": "Citybreak Error 300",
+          "slug": "citybreakerror-300",
+          "color": "#fcbbb4"
+        },
+        {
+          "name": "Citybreak Error 400",
+          "slug": "citybreakerror-400",
+          "color": "#fba49b"
+        },
+        {
+          "name": "Citybreak Error 500",
+          "slug": "citybreakerror-500",
+          "color": "#fa8d82"
+        },
+        {
+          "name": "Citybreak Error 600",
+          "slug": "citybreakerror-600",
+          "color": "#c87168"
+        },
+        {
+          "name": "Citybreak Error 700",
+          "slug": "citybreakerror-700",
+          "color": "#96554e"
+        },
+        {
+          "name": "Citybreak Error 800",
+          "slug": "citybreakerror-800",
+          "color": "#643834"
+        },
+        {
+          "name": "Citybreak Error 900",
+          "slug": "citybreakerror-900",
+          "color": "#321c1a"
+        },
+        {
+          "name": "Citybreak Grey 100",
+          "slug": "citybreakgrey-100",
+          "color": "#d8d9da"
+        },
+        {
+          "name": "Citybreak Grey 200",
+          "slug": "citybreakgrey-200",
+          "color": "#b1b3b5"
+        },
+        {
+          "name": "Citybreak Grey 300",
+          "slug": "citybreakgrey-300",
+          "color": "#898c91"
+        },
+        {
+          "name": "Citybreak Grey 400",
+          "slug": "citybreakgrey-400",
+          "color": "#62666c"
+        },
+        {
+          "name": "Citybreak Grey 500",
+          "slug": "citybreakgrey-500",
+          "color": "#3b4047"
+        },
+        {
+          "name": "Citybreak Grey 600",
+          "slug": "citybreakgrey-600",
+          "color": "#2f3339"
+        },
+        {
+          "name": "Citybreak Grey 700",
+          "slug": "citybreakgrey-700",
+          "color": "#23262b"
+        },
+        {
+          "name": "Citybreak Grey 800",
+          "slug": "citybreakgrey-800",
+          "color": "#181a1c"
+        },
+        {
+          "name": "Citybreak Grey 900",
+          "slug": "citybreakgrey-900",
+          "color": "#0c0d0e"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "regular",
+          "name": "Regular",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "xxl",
+          "name": "2XL",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "xxxl",
+          "name": "3XL",
+          "size": "1.875rem"
+        }
+      ]
+    }
+  }
+}
