@@ -1,12 +1,1 @@
-(() => {
-  // resources/js/app.js
-  window.addEventListener("load", function() {
-    const btn = document.getElementById("menu-btn");
-    const nav = document.getElementById("menu");
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("open");
-      nav.classList.toggle("flex");
-      nav.classList.toggle("hidden");
-    });
-  });
-})();
+(()=>{window.addEventListener("load",function(){let e=document.getElementById("menu-btn"),t=document.getElementById("menu");e.addEventListener("click",()=>{e.classList.toggle("open"),t.classList.toggle("flex"),t.classList.toggle("hidden")})});})();
