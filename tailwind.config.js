@@ -9,7 +9,7 @@ module.exports = {
         './resources/css/*.css',
         './resources/js/*.js',
         './safelist.txt',
-        "./node_modules/flowbite/**/*.js"
+        './node_modules/flowbite/**/*.js',
     ],
     theme: {
         container: {
@@ -36,7 +36,7 @@ module.exports = {
             'md': '782px',
             'lg': tailpress.theme('settings.layout.contentSize', theme),
             'xl': tailpress.theme('settings.layout.wideSize', theme),
-            '2xl': '1440px'
+            '2xl': '1440px',
         }
     },
     plugins: [
