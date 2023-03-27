@@ -43,7 +43,6 @@ function tailpress_enqueue_scripts() {
 
 	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'flowbite', tailpress_asset( 'node_modules/flowbite/dist/flowbite.min.js' ), array(), $theme->get( 'Version' ), true);
 
 }
 
