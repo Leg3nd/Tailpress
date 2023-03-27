@@ -82,7 +82,7 @@
             By continent
         </h3>
         <p class="font-sourcesanspro text-base">
-            Browse our most popular city break guides. Just pick a continent and away you go.
+            Browse our most popular city break guides. Just pick a continent and away you go b.
         </p>
     </div>
 
