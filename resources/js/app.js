@@ -7,6 +7,8 @@
 //       });
 // });
 
+import 'flowbite';
+
 // Navigation toggle 2
 window.addEventListener('load', function () {
       const btn = document.getElementById('menu-btn')
