@@ -140,3 +140,26 @@ function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+/**
+ * Register Blocks
+ * @link https://www.billerickson.net/building-gutenberg-block-acf/#register-block
+ *
+ */
+function be_register_blocks() {
+	
+	if( ! function_exists( 'acf_register_block_type' ) )
+		return;
+
+	acf_register_block_type( array(
+		'name'			=> 'place',
+		'title'			=> __( 'Place', 'place' ),
+		'render_template'	=> 'template-parts/blocks/place/place.php',
+		'category'		=> 'formatting',
+		'icon'			=> 'location',
+		'mode'			=> 'auto',
+		'keywords'		=> array( 'place', 'location', 'activity' )
+	));
+
+}
+add_action('acf/init', 'be_register_blocks' );
