@@ -50,6 +50,18 @@ function tailpress_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
 
 /**
+ * Image sizes
+ * 
+ * This will add additional image sizes optimised at the appropriate size.
+ */
+add_image_size( 'card_small', 390, 220, array( 'center', 'center' ) ); // Crop from center out
+add_image_size( 'card_medium', 452, 254, array( 'center', 'center' ) ); // Crop from center out
+add_image_size( 'card_large', 660, 371, array( 'center', 'center' ) ); // Crop from center out
+add_image_size( 'carousel_medium', 834, 470, array( 'center', 'center' ) ); // Crop from center out
+add_image_size( 'carousel_large', 916, 516, array( 'center', 'center' ) ); // Crop from center out
+
+
+/**
  * Font Awesome Kit Setup
  * 
  * This will add your Font Awesome Kit to the front-end, the admin back-end,
