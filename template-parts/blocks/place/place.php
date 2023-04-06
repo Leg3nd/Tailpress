@@ -40,17 +40,50 @@ $instagram = get_field( 'instagram' );
             </h6>
         </div>
         <div class="p-1">
-            <?php the_field('price'); ?>
-            <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
-            <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
-            <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
-            <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
-            <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                <i class="fa-solid fa-<?php the_field('type'); ?> text-citybreakteal-500"></i>
+        </div>
+        <div class="p-1">
+            <?php 
+                if( get_field('price') == '1' ) {
+                    ?>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                <?php
+                }
+                elseif( get_field('price') == '2' ) {
+                    ?>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                <?php
+                }
+                elseif( get_field('price') == '3' ) {
+                    ?>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                <?php
+                }
+                elseif( get_field('price') == '4' ) {
+                    ?>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                <?php
+                }
+                elseif( get_field('price') == '5' ) {
+                    ?>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                    <i class="fa-solid fa-dollar-sign md:text-2xl text-citybreakorange-500"></i>
+                <?php
+                }
+            ?>
         </div>
     </div>
-    <div class="flex flex-col px-4 pb-4">
-        <p class="text-base font-sourcesanspro">Type: <?php the_field('type'); ?></p>
-        <p class="text-base font-sourcesanspro"><?php the_field('body'); ?></p>
+    <div class="flex flex-col px-4 text-base font-sourcesanspro">
+        <?php the_field('body'); ?>
     </div>
     <div class="flex justify-between px-4 pb-4">
                 <div class="text-left">
