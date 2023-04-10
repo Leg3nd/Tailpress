@@ -50,6 +50,16 @@ function tailpress_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
 
 /**
+ * Reusable Blocks accessible in backend
+ * @link https://www.billerickson.net/reusable-blocks-accessible-in-wordpress-admin-area
+ *
+ */
+function be_reusable_blocks_admin_menu() {
+    add_menu_page( 'Reusable Blocks', 'Reusable Blocks', 'edit_posts', 'edit.php?post_type=wp_block', '', 'dashicons-editor-table', 22 );
+}
+add_action( 'admin_menu', 'be_reusable_blocks_admin_menu' );
+
+/**
  * Image sizes
  * 
  * This will add additional image sizes optimised at the appropriate size.
@@ -59,6 +69,18 @@ add_image_size( 'card_medium', 452, 254, array( 'center', 'center' ) ); // Crop 
 add_image_size( 'card_large', 660, 371, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_medium', 834, 470, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_large', 916, 516, array( 'center', 'center' ) ); // Crop from center out
+
+/**
+ * Custom classes
+ * 
+ * This will add a custom class to the category.
+ */
+add_filter('the_category','add_class_to_category',10,3);
+
+function add_class_to_category( $thelist, $separator, $parents){
+    $class_to_add = 'no-underline text-citybreakteal-500 hover:underline';
+    return str_replace('<a href="', '<a class="' . $class_to_add . '" href="', $thelist);
+}
 
 
 /**

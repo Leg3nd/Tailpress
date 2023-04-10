@@ -1,6 +1,6 @@
 <div class="overflow-hidden"> 
 	<div class="md:h-96 flex items-center">
-		<img src="<?php echo get_template_directory_uri(); ?>/resources/img/aayush-gupta-ljhCEaHYWJ8-unsplash.jpg" class="" alt="...">
+	<?php the_post_thumbnail('full', array('class' => 'mx-auto')); ?>
 	</div>
 </div>
 
@@ -19,7 +19,9 @@
 						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-clock"></i> 5 min read</span>
 					</div>
 					<div class="mr-4">
-						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-file"></i> Posted in <a href="#" class="no-underline text-citybreakteal-500 hover:underline">Portugal</a>, <a href="#" class="no-underline text-citybreakteal-500 hover:underline">Lisbon</a></span>
+						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-file"></i> Posted in 
+							<?php the_category( ' / ' ); ?>
+						</span>
 					</div>
 				</div>
 			</header>
