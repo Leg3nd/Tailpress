@@ -89,6 +89,39 @@
     <!-- Start of continent crawler -->
     <div class="w-full">
         <div class="scrollbar-hide mt-5 flex w-full snap-x snap-mandatory scroll-px-0 gap-5 overflow-x-scroll scroll-smooth px-10">
+
+        <?php 
+            global $post;
+            $args = array(
+                'show_option_all'    => '',
+                'orderby'            => 'name',
+                'order'              => 'ASC',
+                'show_count'         => 0,
+                'hide_empty'         => 0,
+                'use_desc_for_title' => 1,
+                'child_of'           => 0,
+                'feed'               => '',
+                'title_li'           => '',
+                'feed_type'          => '',
+                'feed_image'         => '',
+                'exclude'            => '',
+                'exclude_tree'       => '',
+                'include'            => '',
+                'hierarchical'       => 1,
+                'depth'              => 1,
+                'echo'               => 1,
+                'taxonomy'           => 'category'
+            );
+            $the_query = wp_list_categories( $args ); 
+
+            ?>
+
+        </div>
+    </div><!-- End of continent crawler -->
+
+    <!-- Start of continent crawler -->
+    <div class="w-full">
+        <div class="scrollbar-hide mt-5 flex w-full snap-x snap-mandatory scroll-px-0 gap-5 overflow-x-scroll scroll-smooth px-10">
             <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
                 <a href="#">
                     <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">

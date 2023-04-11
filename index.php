@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<div class="w-full">
-	<div class="flex flex-col container my-8 mx-auto">
+<div class="container mx-auto my-8">
 
 	<?php if ( have_posts() ) : ?>
 		<?php
@@ -15,7 +14,6 @@
 
 	<?php endif; ?>
 
-	</div>
 </div>
 
 <?php

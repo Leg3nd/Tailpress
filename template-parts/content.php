@@ -1,27 +1,21 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
-
-	<header class="entry-header mb-4">
-		<?php the_title( sprintf( '<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl mb-1"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-		<div class="flex">
-			<div class="mr-4">
-				<i class="fa-sharp fa-solid fa-calendar-days text-citybreakgrey-400"></i> <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-citybreakgrey-400"><?php echo get_the_date(); ?></time> 					
-			</div>
-			<div class="mr-4">
-				<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-clock"></i> 5 min read</span>
-			</div>
-			<div class="mr-4">
-				<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-file"></i> Posted in 
-					<?php the_category( ' / ' ); ?>
-				</span>
-			</div>
-		</div>
-	</header>
-
+<article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
 	<?php if ( is_search() || is_archive() ) : ?>
-
-		<div class="entry-summary">
-			<?php the_excerpt(); ?>
-		</div>
+		<a href="<?php the_permalink();?>" class="block max-w-sm bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 hover:shadow hover:opacity-95" >
+			<div class="flex relative overflow-hidden w-full">
+				<?php the_post_thumbnail('card_medium', array('class' => 'mx-auto')); ?>
+				<div class="absolute left-5 bottom-5 bg-citybreakteal-500 -skew-x-6 w-3/4 z-10 px-1 py-1">
+					<h4 class="text-base text-white skew-x-6 font-sourcesanspro"><?php the_title(); ?></h4>
+				</div>
+			</div>
+			<div class="flex p-4">
+				<div class="flex-grow p-1">
+					<h6 class="text-base font-bold text-citybreakgrey-300 font-sourcesanspro"><?php echo get_the_date(); ?></h6>
+				</div>
+			</div> 
+			<div class="flex px-4 pb-4">
+				<p class="text-base font-sourcesanspro"><?php the_excerpt(); ?></p>
+			</div>
+		</a>
 
 	<?php else : ?>
 
