@@ -69,6 +69,7 @@ add_image_size( 'card_medium', 452, 254, array( 'center', 'center' ) ); // Crop 
 add_image_size( 'card_large', 660, 371, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_medium', 834, 470, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_large', 916, 516, array( 'center', 'center' ) ); // Crop from center out
+add_image_size( 'continent_large', 409, 613, array( 'center', 'center' ) ); // Crop from center out
 
 /**
  * Custom classes

@@ -82,7 +82,7 @@
             By continent
         </h3>
         <p class="font-sourcesanspro text-base">
-            Browse our most popular city break guides. Just pick a continent and away you go b.
+            Browse our most popular city break guides. Just pick a continent and away you go.
         </p>
     </div>
 
@@ -90,98 +90,36 @@
     <div class="w-full">
         <div class="scrollbar-hide mt-5 flex w-full snap-x snap-mandatory scroll-px-0 gap-5 overflow-x-scroll scroll-smooth px-10">
 
-        <?php 
-            global $post;
-            $args = array(
-                'show_option_all'    => '',
-                'orderby'            => 'name',
-                'order'              => 'ASC',
-                'show_count'         => 0,
-                'hide_empty'         => 0,
-                'use_desc_for_title' => 1,
-                'child_of'           => 0,
-                'feed'               => '',
-                'title_li'           => '',
-                'feed_type'          => '',
-                'feed_image'         => '',
-                'exclude'            => '',
-                'exclude_tree'       => '',
-                'include'            => '',
-                'hierarchical'       => 1,
-                'depth'              => 1,
-                'echo'               => 1,
-                'taxonomy'           => 'category'
-            );
-            $the_query = wp_list_categories( $args ); 
+        <?php
 
-            ?>
+            $args = array( 
+                'orderby' => 'name',
+                'parent'  => 0,
+                'hide_empty' => '0');
+            $categories = get_categories($args);
+            if($categories){
+                foreach($categories as $category) {
+                    $link = get_term_link($category);
+                    echo '<div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">';
+                    $size = "continent_large";
+                    $image = get_field('image', 'category_'.$category->term_id);    
+                        echo '<a href="'.$link.'">';
+                            echo '<div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">';
+                                echo '<h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">' . $category->name . '</h4>';
+                                echo '<p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">' . $category->description . '</p>';
+                            echo '</div>';
+                            echo '<img src="' . $image . '" />'; 
+                        echo '</a>';
+                    echo '</div>';
+                } 
+            }    
+
+        ?>
 
         </div>
     </div><!-- End of continent crawler -->
 
-    <!-- Start of continent crawler -->
-    <div class="w-full">
-        <div class="scrollbar-hide mt-5 flex w-full snap-x snap-mandatory scroll-px-0 gap-5 overflow-x-scroll scroll-smooth px-10">
-            <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
-                <a href="#">
-                    <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">
-                        <h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">Africa</h4>
-                        <p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">Morocco, Egypt and more</p>
-                    </div>
-                    <img src="https://source.unsplash.com/T-LfvX-7IVg" alt="image" class="h-full w-full object-cover" />
-                </a>
-            </div>
-            <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
-                <a href="#">
-                    <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">
-                        <h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">Asia</h4>
-                        <p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">Thailand, Japan and more</p>
-                    </div>
-                    <img src="https://source.unsplash.com/iEJVyyevw-U" class="h-full w-full object-cover" />
-                </a>
-            </div>
-    
-            <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
-                <a href="#">
-                    <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">
-                        <h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">Australia</h4>
-                        <p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">Australia, New Zealand and more</p>
-                    </div>
-                <img src="https://source.unsplash.com/31s22xbZXQU" class="h-full w-full object-cover" />
-                </a>
-            </div>
-    
-            <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
-                <a href="#">
-                    <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">
-                        <h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">Europe</h4>
-                        <p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">UK, France and more</p>
-                    </div>
-                <img src="https://source.unsplash.com/rknrvCrfS1k" class="h-full w-full object-cover" />
-                </a>
-            </div>
-    
-            <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
-                <a href="#">
-                    <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">
-                        <h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">North America</h4>
-                        <p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">US, Canada and more</p>
-                    </div>
-                    <img src="https://source.unsplash.com/SVVTZtTGyaU" class="h-full w-full object-cover" />
-                </a>
-            </div>
-    
-            <div class="md:2/3 relative -skew-x-6 aspect-[2/3] w-[35%] h-[35%] shrink-0 snap-start snap-always bg-orange-100">
-                <a href="#">
-                    <div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">
-                        <h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">South America</h4>
-                        <p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">Brazil, Argentina and more</p>
-                    </div>
-                    <img src="https://source.unsplash.com/7F65HDP0-E0" class="h-full w-full object-cover" />
-                </a>
-            </div>
-        </div>
-    </div><!-- End of continent crawler -->
+
 
     <!-- Start of homepage latest articles -->
     <div class="flex flex-col my-5">
