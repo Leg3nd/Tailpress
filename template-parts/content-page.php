@@ -4,6 +4,7 @@
 		<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl mb-1"><?php the_title(); ?></h2>
 	</header>
 
+
 	<?php if ( is_search() || is_archive() ) : ?>
 
 		<div class="entry-summary">
@@ -12,7 +13,7 @@
 
 	<?php else : ?>
 
-		<div class="entry-content md:w-10/12 mx-auto">
+		<div class="entry-content mx-auto">
 			<?php
 			/* translators: %s: Name of current post */
 			the_content(

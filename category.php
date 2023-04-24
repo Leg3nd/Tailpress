@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-<div class="w-full">
-	<div class="flex flex-col container my-8 mx-auto">
-
-		<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl mb-1"><?php single_cat_title(); ?></h2>
+<div class="w-full container mx-auto pb-5">
+    <div class="flex flex-col my-5">
+        <header class="entry-header mb-4">
+            <h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl mb-1"><?php single_cat_title(); ?></h2>
+        </header>
         <?php 
-            the_archive_description( '<div class="taxonomy-description">', '</div>' ); 
+            the_archive_description( '<div class="font-sourcesanspro text-base taxonomy-description">', '</div>' ); 
         ?>
 
         <div class="flex flex-col my-5">
