@@ -19,7 +19,7 @@
 <div id="page" class="min-h-screen flex flex-col">
 
 	<?php do_action( 'tailpress_header' ); ?>
-	<?php if ( is_user_logged_in() ) { global $template; echo basename($template); } ?>
+	<?php // if ( is_user_logged_in() ) { global $template; echo basename($template); } ?>
 
 	<header>
 

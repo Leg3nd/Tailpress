@@ -57,6 +57,27 @@
                     <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">10 restaurants to visit on a budget in Lisbon in 2023</a></li>
                     <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">10 restaurants to visit on a budget in Lisbon in 2023</a></li>
                 </ul>   
+                <?php 
+                // the query
+                $the_query = new WP_Query( array(
+                    'posts_per_page' => 3
+                )); 
+                ?>
+
+                <?php if ( $the_query->have_posts() ) : ?>
+                    <ul class="list-none">
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+                        <li class="my-1"><?php the_title(); ?></li>
+
+                        <?php endwhile; ?>
+                    </ul>   
+                    <?php wp_reset_postdata(); ?>
+
+                <?php else : ?>
+                <p><?php __('No News'); ?></p>
+                <?php endif; ?>
+
             </div>
             <div class="w-1/2 md:w-1/4 p-2">
                 <h5 class="text-white text-xl">About</h5>
