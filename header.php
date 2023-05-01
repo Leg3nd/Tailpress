@@ -62,7 +62,7 @@
 						wp_nav_menu(
 							array(
 								'container_id'    => 'menu',
-								'container_class' => 'absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md',
+								'container_class' => 'flex-col items-center self-end hidden py-8 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md',
 								'menu_class'      => '',
 								'theme_location'  => 'primary',
 								'li_class'        => '',

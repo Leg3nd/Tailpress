@@ -17,7 +17,7 @@
                     $image = get_field('catimage', 'category_'.$category->term_id);    
                         echo '<a href="'.$link.'">';
                             echo '<div class="absolute bottom-0 z-10 w-full bg-gradient-to-t from-black px-5 py-3">';
-                                echo '<h4 class="mt-4 skew-x-6 font-inter text-xl font-bold text-white">' . $category->name . '</h4>';
+                                echo '<h4 class="mt-4 skew-x-6 font-inter text-base md:text-xl font-bold text-white">' . $category->name . '</h4>';
                                 echo '<p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">' . $category->description . '</p>';
                             echo '</div>';
                             echo '<img src="' . $image . '" />'; 

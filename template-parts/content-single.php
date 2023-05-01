@@ -26,7 +26,7 @@
 				</div>
 			</header>
 
-			<div class="entry-content md:w-10/12 mx-auto">
+			<div class="entry-content md:w-10/12 xl:w-8/12 mx-auto">
 				<?php the_content(); ?>
 
 				<?php

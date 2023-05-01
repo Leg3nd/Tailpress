@@ -41,22 +41,31 @@
                     <!--End mc_embed_signup-->
             </div>
             <div class="w-1/2 md:w-1/4 p-2">
-                <h5 class="text-white text-xl">Top destinations</h5>   
-                <ul class="list-none">
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">Lisbon</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">Paris</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">London</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">New York</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">Melbourne</a></li>
-                </ul>             
+            <h5 class="text-white text-xl">Top destinations</h5>   
+            <?php 
+                $args = array(
+                'orderby' => 'name',
+                'hierarchical' => 1,
+                'taxonomy' => 'category',
+                'hide_empty' => 0,
+                'parent' => 0,
+                );
+                $categories = get_categories($args);
+
+                echo '<ul class="list-none">';
+
+
+                foreach($categories as $category) {
+
+                echo '<li class="my-1"><a href="' . get_category_link($category->cat_ID) . '" title="' . $category->name . '" class="text-citybreakteal-500 no-underline hover:underline">' . $category->name . '</a></li>';
+
+                } 
+                echo '</ul>';
+
+            ?>           
             </div>
             <div class="w-1/2 md:w-1/4 p-2">
-                <h5 class="text-white text-xl">Latest posts</h5>                
-                <ul class="list-none">
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">10 restaurants to visit on a budget in Lisbon in 2023</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">10 restaurants to visit on a budget in Lisbon in 2023</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">10 restaurants to visit on a budget in Lisbon in 2023</a></li>
-                </ul>   
+                <h5 class="text-white text-xl">Latest posts</h5>
                 <?php 
                 // the query
                 $the_query = new WP_Query( array(
@@ -68,7 +77,7 @@
                     <ul class="list-none">
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-                        <li class="my-1"><?php the_title(); ?></li>
+                        <li class="my-1"><a href="<?php the_permalink(); ?>" class="text-citybreakteal-500 no-underline hover:underline"><?php the_title(); ?></a></li>
 
                         <?php endwhile; ?>
                     </ul>   

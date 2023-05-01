@@ -26,7 +26,7 @@ $instagram = get_field( 'instagram' );
     <div class="flex relative overflow-hidden w-full">
     <?php 
         $image = get_field('photo');
-        $size = 'card_large'; // (thumbnail, medium, large, full or custom size)
+        $size = 'card_xl'; // (thumbnail, medium, large, full or custom size)
         if( $image ) {
             echo wp_get_attachment_image( $image, $size );
         } ?>
