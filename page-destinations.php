@@ -16,7 +16,7 @@
 				<?php $query = new WP_Query( array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
-				'cat' => 5
+				'category_name' => 'africa'
 				) );
 				while ($query->have_posts()) : $query->the_post(); ?>
 					<?php get_template_part( 'template-parts/home', 'latestposts' ); ?>
@@ -30,7 +30,7 @@
 				<?php $query = new WP_Query( array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
-				'cat' => 6
+				'category_name' => 'asia'
 				) );
 				while ($query->have_posts()) : $query->the_post(); ?>
 					<?php get_template_part( 'template-parts/home', 'latestposts' ); ?>
@@ -44,7 +44,7 @@
 				<?php $query = new WP_Query( array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
-				'cat' => 6
+				'category_name' => 'australia'
 				) );
 				while ($query->have_posts()) : $query->the_post(); ?>
 					<?php get_template_part( 'template-parts/home', 'latestposts' ); ?>
@@ -59,7 +59,7 @@
 				<?php $query = new WP_Query( array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
-				'cat' => 8
+				'category_name' => 'europe'
 				) );
 				while ($query->have_posts()) : $query->the_post(); ?>
 					<?php get_template_part( 'template-parts/home', 'latestposts' ); ?>
@@ -73,7 +73,7 @@
 				<?php $query = new WP_Query( array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
-				'cat' => 13
+				'category_name' => 'north-america'
 				) );
 				while ($query->have_posts()) : $query->the_post(); ?>
 					<?php get_template_part( 'template-parts/home', 'latestposts' ); ?>
@@ -87,7 +87,7 @@
 				<?php $query = new WP_Query( array(
 				'post_type' => 'post',
 				'posts_per_page' => 3,
-				'cat' => 14
+				'category_name' => 'south-america'
 				) );
 				while ($query->have_posts()) : $query->the_post(); ?>
 					<?php get_template_part( 'template-parts/home', 'latestposts' ); ?>
