@@ -86,6 +86,23 @@ function add_class_to_category( $thelist, $separator, $parents){
 }
 
 
+//estimated reading time
+function reading_time() {
+	$content = get_post_field( 'post_content', '' );
+	$word_count = str_word_count( strip_tags( $content ) );
+	$readingtime = ceil($word_count / 200);
+	
+	if ($readingtime == 1) {
+	$timer = " minute read";
+	} else {
+	$timer = " minutes to read";
+	}
+	$totalreadingtime = $readingtime . $timer;
+	
+	return $totalreadingtime;
+	}
+
+
 /**
  * Font Awesome Kit Setup
  * 

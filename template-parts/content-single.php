@@ -16,7 +16,7 @@
 						<i class="fa-sharp fa-solid fa-calendar-days text-citybreakgrey-400"></i> <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-citybreakgrey-400"><?php echo get_the_date(); ?></time> 					
 					</div>
 					<div class="mr-4">
-						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-clock"></i> 5 min read</span>
+						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-clock"></i> <?php echo reading_time(); ?></span>
 					</div>
 					<div class="mr-4">
 						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-file"></i> Posted in 
