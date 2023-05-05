@@ -18,7 +18,7 @@
                 <h5 class="text-white text-xl">Subscribe</h5>
                     <!-- Begin Mailchimp Signup Form -->
                     <div id="mc_embed_signup">
-                        <form action="https://citybreak.us1.list-manage.com/subscribe/post?u=8f3494f8ba8f3d8ae1c676667&amp;id=ffadcbb3b4&amp;v_id=3529&amp;f_id=00caf7e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+                        <form action="https://citybreak.us21.list-manage.com/subscribe/post?u=3fd30817b504e5e809b50b622&amp;id=b97c9ae1cf&amp;f_id=0099b3e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
                             <div id="mc_embed_signup_scroll">                    
                                 <div class="mb-1 mc-field-group">
                                     <label for="mce-EMAIL" class="block mb-2 text-sm font-sourcesanspro text-white dark:text-white">Email</label>
@@ -31,7 +31,7 @@
                                     <div class="response" id="mce-success-response" style="display:none"></div>
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_8f3494f8ba8f3d8ae1c676667_ffadcbb3b4" tabindex="-1" value="">
+                                    <input type="text" name="b_3fd30817b504e5e809b50b622_b97c9ae1cf" tabindex="-1" value="">
                                 </div>
                                 <button class="rounded-none font-sourcesanspro text-white bg-citybreakteal-600 hover:bg-citybreakteal-500 hover:text-white p-1" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe!</button>
                             </div>
