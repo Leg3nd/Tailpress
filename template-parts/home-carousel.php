@@ -29,8 +29,8 @@ if( $posts ): ?>
             <div class="hidden duration-500 ease-in-out" data-carousel-item>
                 <a href="<?php the_permalink(); ?>" class="hover:opacity-95">
                     <?php the_post_thumbnail('carousel_large', array('class' => 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2')); ?>
-                    <div class="relative container bg-citybreakteal-500 -skew-x-6 w-[23rem] md:w-[46rem] p-2 top-600 top-2/3 md:top-1/2 opacity-100">
-                        <h2 class="font-inter text-lg text-left text-white skew-x-6 drop-shadow-md md:text-4xl"><?php the_title(); ?></h2>
+                    <div class="relative container bg-citybreakteal-500 -skew-x-6 w-[23rem] md:w-[46rem] p-2 top-600 top-1/2 md:top-1/2 opacity-100">
+                        <h2 class="font-inter text-md text-left text-white skew-x-6 drop-shadow-md md:text-4xl"><?php the_title(); ?></h2>
                     </div>     
                 </a>
             </div>            
