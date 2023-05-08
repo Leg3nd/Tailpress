@@ -67,7 +67,7 @@ add_action( 'admin_menu', 'be_reusable_blocks_admin_menu' );
 add_image_size( 'card_small', 390, 220, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'card_medium', 598, 336, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'card_large', 693, 389, array( 'center', 'center' ) ); // Crop from center out
-add_image_size( 'card_xl', 746, 419, array( 'center', 'center' ) ); // Crop from center out
+add_image_size( 'card_xl', 832, 468, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_medium', 834, 470, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_large', 916, 516, array( 'center', 'center' ) ); // Crop from center out
 add_image_size( 'carousel_xl', 1440, 810, array( 'center', 'center' ) ); // Crop from center out
