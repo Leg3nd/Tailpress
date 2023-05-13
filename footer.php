@@ -91,9 +91,9 @@
             <div class="w-1/2 md:w-1/4 p-2">
                 <h5 class="text-white text-xl">About</h5>
                 <ul class="list-none">
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">Who we are</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">How we work</a></li>
-                    <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">Write for us</a></li>
+                    <li class="my-1"><a href="/who-we-are" class="text-citybreakteal-500 no-underline hover:underline">Who we are</a></li>
+                    <li class="my-1"><a href="/how-we-work" class="text-citybreakteal-500 no-underline hover:underline">How we work</a></li>
+                    <!-- <li class="my-1"><a href="#" class="text-citybreakteal-500 no-underline hover:underline">Write for us</a></li> -->
                 </ul>  
                 <div class="flex flex-row">
                     <div class="p-1">
