@@ -59,7 +59,7 @@
 
 		<div class="grid mt-4 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-        <?php $query = new WP_Query( array(
+            <?php $query = new WP_Query( array(
             'post_type' => 'post',
             'posts_per_page' => 6,
             'offset' => 6,
