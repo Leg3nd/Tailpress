@@ -1313,6 +1313,14 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
