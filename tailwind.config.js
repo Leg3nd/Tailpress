@@ -41,6 +41,7 @@ module.exports = {
     },
     plugins: [
         tailpress.tailwind,
-        require('flowbite/plugin')
+        require('flowbite/plugin'),
+        require('autoprefixer'),
     ]
 };
