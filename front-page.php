@@ -20,7 +20,7 @@
 
     <!-- Start of homepage latest articles -->
     <div class="flex flex-col my-5">
-        <h3 class="text-3xl font-inter text-citybreakteal-500">
+        <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
             Latest articles
         </h3>
         <p class="font-sourcesanspro text-base">
@@ -50,7 +50,7 @@
 <div class="w-full container mx-auto py-5">
     <!-- Start of homepage top trending -->
     <div class="flex flex-col my-5 pb-5">
-        <h3 class="text-3xl font-inter text-citybreakteal-500">
+        <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
             More articles
         </h3>
         <p class="font-sourcesanspro text-base">
