@@ -98,5 +98,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<?php do_action( 'tailpress_content_start' ); ?>
 
 		<main>
-			<p>b</p>
-

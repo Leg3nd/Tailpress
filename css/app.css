@@ -1861,6 +1861,10 @@ input:checked + .toggle-bg {
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-9 {
   line-height: 2.25rem;
 }
