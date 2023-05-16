@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,600&family=Source+Sans+Pro&display=swap');
-	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
 
 	<!-- Google Tag Manager -->
@@ -98,4 +98,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<?php do_action( 'tailpress_content_start' ); ?>
 
 		<main>
+			<p>b</p>
 
