@@ -57,7 +57,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							'menu_class'      => 'flex',
 							'theme_location'  => 'primary',
 							'li_class'        => 'm-4',
-							'link_class'     => 'font-inter text-white text-lg uppercase no-underline hover:underline',
+							'link_class'     => 'font-inter font-semibold italic text-white text-lg uppercase no-underline hover:underline',
 							'fallback_cb'     => false,
 						)
 					);

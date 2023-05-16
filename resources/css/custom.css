@@ -5,19 +5,19 @@ article > *:not(.entry-content),
 
 .entry-content, .block-editor-block-list__layout {
     h1 {
-        @apply text-5xl font-inter text-citybreakteal-500 my-8;
+        @apply text-5xl font-inter text-citybreakteal-500 font-semibold italic my-8;
     }
 
     h2 {
-        @apply text-4xl font-inter text-citybreakteal-500 my-4;
+        @apply text-4xl font-inter text-citybreakteal-500 font-semibold italic my-4;
     }
 
     h3 {
-        @apply text-3xl font-inter text-citybreakteal-500 my-4;
+        @apply text-3xl font-inter text-citybreakteal-500 font-semibold italic my-4;
     }
 
     h4 {
-        @apply text-2xl font-inter text-citybreakteal-500 my-4;
+        @apply text-2xl font-inter text-citybreakteal-500 font-semibold italic my-4;
     }
 
     h5 {

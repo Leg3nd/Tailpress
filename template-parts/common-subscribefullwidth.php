@@ -2,7 +2,7 @@
 <div class="w-full bg-citybreakteal-500">
     <div class="container mx-auto py-5">
         <div class="flex flex-col my-5">
-            <h3 class="text-3xl font-inter text-white">
+            <h3 class="text-3xl font-semibold italic font-inter text-white">
                 Subscribe to our newsletter
             </h3>
             <p class="text-white">Get our latest guides and tips straight to your inbox.</p>
