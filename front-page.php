@@ -10,7 +10,7 @@
         <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
             By continent
         </h3>
-        <p class="font-sourcesanspro text-base">
+        <p class="font-sourcesanspro text-base italic">
             Browse our most popular city break guides. Just pick a continent and away you go.
         </p>
     </div>
