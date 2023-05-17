@@ -7,10 +7,10 @@
 <div class="w-full container mx-auto pb-5">
 
     <div class="flex flex-col my-5">
-        <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
+        <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold"><em>
             By continent
-        </h3>
-        <p class="font-sourcesanspro text-base italic">
+        </em></h3>
+        <p class="font-sourcesanspro text-base">
             Browse our most popular city break guides. Just pick a continent and away you go.
         </p>
     </div>
