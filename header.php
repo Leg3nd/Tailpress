@@ -80,6 +80,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								'menu_class'      => '',
 								'theme_location'  => 'primary',
 								'li_class'        => '',
+								'link_before'    => '<em>',
+								'link_after'     => '</em>'
 								'link_class'     => 'font-inter text-lg text-citybreakteal-500 uppercase no-underline hover:underline',
 								'fallback_cb'     => false,
 							)

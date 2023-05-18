@@ -21,7 +21,7 @@
     <!-- Start of homepage latest articles -->
     <div class="flex flex-col my-5">
         <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
-            Latest articles
+        <em>Latest articles</em>
         </h3>
         <p class="font-sourcesanspro text-base">
             Browse our most popular city break guides. Just pick a continent and away you go.
@@ -51,7 +51,7 @@
     <!-- Start of homepage top trending -->
     <div class="flex flex-col my-5 pb-5">
         <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
-            More articles
+        <em>More articles</em>
         </h3>
         <p class="font-sourcesanspro text-base">
             Continue to read our latest posts.
