@@ -97,6 +97,28 @@
   left: 0px
 }
 
+.inset-2\/3 {
+  top: 66.666667%;
+  right: 66.666667%;
+  bottom: 66.666667%;
+  left: 66.666667%
+}
+
+.inset-x-auto {
+  left: auto;
+  right: auto
+}
+
+.inset-x-64 {
+  left: 16rem;
+  right: 16rem
+}
+
+.inset-y-auto {
+  top: auto;
+  bottom: auto
+}
+
 .left-6 {
   left: 1.5rem
 }
