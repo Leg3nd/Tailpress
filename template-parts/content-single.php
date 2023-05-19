@@ -10,8 +10,8 @@
 		<div class="flex flex-col container my-8 mx-auto">
 
 			<header class="entry-header mb-4">
-				<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl my-2"><?php the_title(); ?></h2>
-				<div class="flex">
+				<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl my-2"><em><?php the_title(); ?></em></h2>
+				<div class="flex flex-col md:flex-row">
 					<div class="mr-4">
 						<i class="fa-sharp fa-solid fa-calendar-days text-citybreakgrey-400"></i> <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-citybreakgrey-400"><?php echo get_the_date(); ?></time> 					
 					</div>

@@ -26,7 +26,7 @@ if( $posts ): ?>
             ?>
 
             <!-- Item -->
-            <div class="hidden duration-500 ease-in-out" data-carousel-item>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <a href="<?php the_permalink(); ?>" class="hover:opacity-95">
                     <?php the_post_thumbnail('carousel_large', array('class' => 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2')); ?>
                     <div class="absolute container top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-citybreakteal-500 -skew-x-6 w-64 md:w-[46rem] p-2 opacity-100">

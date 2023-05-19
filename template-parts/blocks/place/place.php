@@ -31,11 +31,11 @@ $instagram = get_field( 'instagram' );
             echo wp_get_attachment_image( $image, $size );
         } ?>
         <div class="absolute left-5 bottom-5 bg-citybreakteal-500 -skew-x-6 w-3/4 z-10 px-1 py-1">
-            <h4 class="text-base text-white skew-x-6 font-sourcesanspro"><?php the_field('title'); ?></h4>
+            <h4 class="text-base text-white skew-x-6 font-sourcesanspro"><em><?php the_field('title'); ?></em></h4>
         </div>
     </div>
-    <div class="flex p-4">
-        <div class="flex-grow p-1">
+    <div class="flex flex-row py-2 md:p-4">
+        <div class="basis-2/3 text-left">
             <h6 class="text-base font-bold text-citybreakgrey-300 font-sourcesanspro">
                 <a href="<?php the_field('google_map'); ?>" class="no-underline text-citybreakteal-500 hover:underline">
                     <i class="fa-solid fa-location-dot text-citybreakteal-500"></i>
@@ -43,10 +43,10 @@ $instagram = get_field( 'instagram' );
                 </a>
             </h6>
         </div>
-        <div class="p-1">
+        <!-- <div class="basis-1/4">
                 <i class="fa-solid fa-<?php the_field('type'); ?> text-citybreakteal-500"></i>
-        </div>
-        <div class="p-1">
+        </div> -->
+        <div class="basis-1/3 text-right">
             <?php 
                 if( get_field('price') == '1' ) {
                     ?>
@@ -86,10 +86,10 @@ $instagram = get_field( 'instagram' );
             ?>
         </div>
     </div>
-    <div class="flex flex-col px-4 text-base font-sourcesanspro">
+    <div class="flex flex-col py-2 md:p-4 text-base font-sourcesanspro">
         <?php the_field('body'); ?>
     </div>
-    <div class="flex justify-between px-4 pb-4">
+    <div class="flex justify-between py-2 md:p-4">
                 <div class="text-left">
                     <h5>Discover more</h5>
                         <?php if( get_field('website') ): ?>
