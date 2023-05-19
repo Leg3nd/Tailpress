@@ -36,7 +36,7 @@ $instagram = get_field( 'instagram' );
     </div>
     <div class="flex flex-row py-2 md:p-4">
         <div class="basis-2/3 text-left">
-            <h6 class="text-base font-bold text-citybreakgrey-300 font-sourcesanspro">
+            <h6 class="text-base text-citybreakgrey-300 font-sourcesanspro">
                 <a href="<?php the_field('google_map'); ?>" class="no-underline text-citybreakteal-500 hover:underline">
                     <i class="fa-solid fa-location-dot text-citybreakteal-500"></i>
                     <?php the_field('address'); ?>
@@ -107,14 +107,14 @@ $instagram = get_field( 'instagram' );
                 <a href="#"><i class="fa-sharp fa-solid fa-square-share-nodes text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
         </div>
     </div>
-        <?php
-        $img_acf = get_field('photo');
-        $img_acf_caption = get_the_excerpt( $img_acf );
+    <?php
+    $img_acf = get_field('photo');
+    $img_acf_caption = get_the_excerpt( $img_acf );
 
-        ?>
-        <?php if( $img_acf_caption ){ ?>
-        <p class="text-sm text-citybreakgrey-200 text-right font-sourcesanspro"><?php echo $img_acf_caption; ?></p>
-        <?php } ?>
+    ?>
+    <?php if( $img_acf_caption ){ ?>
+    <p class="text-sm text-citybreakgrey-200 text-right font-sourcesanspro md:px-4"><?php echo $img_acf_caption; ?></p>
+    <?php } ?>
 
     <hr class="mb-4"/>
 </div><!--End of microcontent -->

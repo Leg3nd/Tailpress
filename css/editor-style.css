@@ -1536,6 +1536,16 @@ body {
     padding: 1rem
   }
 
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem
