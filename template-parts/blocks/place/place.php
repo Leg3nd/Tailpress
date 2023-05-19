@@ -24,7 +24,7 @@ $instagram = get_field( 'instagram' );
 
 <div class="microcontent">
     <div class="flex relative overflow-hidden w-full">
-    <?php 
+        <?php 
         $image = get_field('photo');
         $size = 'card_xl'; // (thumbnail, medium, large, full or custom size)
         if( $image ) {
@@ -90,25 +90,34 @@ $instagram = get_field( 'instagram' );
         <?php the_field('body'); ?>
     </div>
     <div class="flex justify-between py-2 md:p-4">
-                <div class="text-left">
-                    <h5>Discover more</h5>
-                        <?php if( get_field('website') ): ?>
-                            <a href="<?php the_field('website'); ?>"><i class="fa-solid fa-square-arrow-up-right text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
-                        <?php endif; ?>
-                        <?php if( get_field('twitter') ): ?>
-                            <a href="<?php the_field('twitter'); ?>"><i class="fa-brands fa-square-twitter text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
-                        <?php endif; ?>
-                        <?php if( get_field('instagram') ): ?>
-                            <a href="<?php the_field('instagram'); ?>"><i class="fa-brands fa-square-instagram text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
-                        <?php endif; ?>
-                </div>
-                <div class="text-right">
-                    <h5>Share</h5>
-                        <a href="#"><i class="fa-sharp fa-solid fa-square-share-nodes text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
-                </div>
-            </div>
-            <hr />
-        </div><!--End of microcontent -->
+        <div class="text-left">
+            <h5>Discover more</h5>
+                <?php if( get_field('website') ): ?>
+                    <a href="<?php the_field('website'); ?>"><i class="fa-solid fa-square-arrow-up-right text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                <?php endif; ?>
+                <?php if( get_field('twitter') ): ?>
+                    <a href="<?php the_field('twitter'); ?>"><i class="fa-brands fa-square-twitter text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                <?php endif; ?>
+                <?php if( get_field('instagram') ): ?>
+                    <a href="<?php the_field('instagram'); ?>"><i class="fa-brands fa-square-instagram text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                <?php endif; ?>
+        </div>
+        <div class="text-right">
+            <h5>Share</h5>
+                <a href="#"><i class="fa-sharp fa-solid fa-square-share-nodes text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+        </div>
+    </div>
+        <?php
+        $img_acf = get_field('photo');
+        $img_acf_caption = get_the_excerpt( $img_acf );
+
+        ?>
+        <?php if( $img_acf_caption ){ ?>
+        <p class="text-sm text-citybreakgrey-200 text-right font-sourcesanspro"><?php echo $img_acf_caption; ?></p>
+        <?php } ?>
+
+    <hr class="mb-4"/>
+</div><!--End of microcontent -->
 
 
 

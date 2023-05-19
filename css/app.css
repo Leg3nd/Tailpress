@@ -1888,6 +1888,11 @@ input:checked + .toggle-bg {
   line-height: 2.5rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1968,6 +1973,11 @@ input:checked + .toggle-bg {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
+}
+
+.text-citybreakgrey-200 {
+  --tw-text-opacity: 1;
+  color: rgb(177 179 181 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2651,6 +2661,10 @@ article > *:not(.entry-content),
 
   .md\:w-\[46rem\] {
     width: 46rem;
+  }
+
+  .md\:shrink {
+    flex-shrink: 1;
   }
 
   .md\:grid-cols-2 {
