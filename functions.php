@@ -102,7 +102,6 @@ function reading_time() {
 	return $totalreadingtime;
 	}
 
-
 /**
  * Font Awesome Kit Setup
  * 

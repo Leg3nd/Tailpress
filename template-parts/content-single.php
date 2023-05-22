@@ -13,7 +13,9 @@
 				<div class="flex flex-col md:flex-row">
 					<div class="">
 						<span class="text-sm text-citybreakgrey-400"><i class="fa-solid fa-file"></i> Posted in 
-							<?php the_category( ' / ' ); ?>
+							<?php 
+								the_category( ' / ', 'multiple', $post->ID); 
+							?> 
 						</span>
 					</div>
 				</div>
