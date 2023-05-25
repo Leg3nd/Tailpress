@@ -11,6 +11,7 @@ module.exports = {
         './safelist.txt',
         './node_modules/flowbite/**/*.js',
     ],
+    darkMode: 'media',
     theme: {
         container: {
             center: true,

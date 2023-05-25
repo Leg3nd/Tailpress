@@ -97,10 +97,10 @@
                 </ul>  
                 <div class="flex flex-row">
                     <div class="p-1">
-                        <a href="https://www.instagram.com/citybreak__"><i class="fa-brands fa-square-instagram text-citybreakteal-500 text-2xl"></i></a>
+                        <a href="https://www.instagram.com/citybreak__" aria-label="Visit Citybreak on Instagram"><i class="fa-brands fa-square-instagram text-citybreakteal-500 text-2xl"></i></a>
                     </div>
                     <div class="p-1">
-                        <a href="https://twitter.com/citybreak_"><i class="fa-brands fa-square-twitter text-citybreakteal-500 text-2xl"></i></a>
+                        <a href="https://twitter.com/citybreak_" aria-label="Visit Citybreak on Twitter"><i class="fa-brands fa-square-twitter text-citybreakteal-500 text-2xl"></i></a>
                     </div>
                 </div>
             </div>

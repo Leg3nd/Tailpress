@@ -1,9 +1,9 @@
 <!-- Start of subscribe row -->
-<div class="w-full bg-citybreakteal-500">
-    <div class="container mx-auto py-5">
+<div class="w-full py-5 bg-citybreakteal-500 dark:bg-citybreakteal-600">
+    <div class="container">
         <div class="flex flex-col my-5">
             <h3 class="text-3xl font-semibold italic font-inter text-white">
-            <em>Subscribe to our newsletter</em>
+                <em>Subscribe to our newsletter</em>
             </h3>
             <p class="text-white">Get our latest guides and tips straight to your inbox.</p>
 
@@ -24,14 +24,11 @@
                         <div style="position: absolute; left: -5000px;" aria-hidden="true">
                             <input type="text" name="b_3fd30817b504e5e809b50b622_b97c9ae1cf" tabindex="-1" value="">
                         </div>
-                            <button class="rounded-none font-sourcesanspro text-citybreakteal-600 bg-white hover:bg-citybreakteal-600 hover:text-white p-2" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe for updates</button>
-                        </div>
+                        <button class="rounded-none font-sourcesanspro text-citybreakteal-600 bg-white hover:bg-citybreakteal-600 hover:text-white p-2" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe for updates</button>
                     </div>
                 </form>
             </div>
-
             <!--End mc_embed_signup-->
-
         </div>
     </div>
 </div>

@@ -10,7 +10,7 @@
         <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold"><em>
             By continent
         </em></h3>
-        <p class="font-sourcesanspro text-base">
+        <p class="font-sourcesanspro text-base dark:text-white">
             Browse our most popular city break guides. Just pick a continent and away you go.
         </p>
     </div>
@@ -23,7 +23,7 @@
         <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
         <em>Latest articles</em>
         </h3>
-        <p class="font-sourcesanspro text-base">
+        <p class="font-sourcesanspro text-base dark:text-white">
             Browse our most popular city break guides. Just pick a continent and away you go.
         </p>
 
@@ -53,7 +53,7 @@
         <h3 class="text-3xl font-inter text-citybreakteal-500 font-semibold	italic">
         <em>More articles</em>
         </h3>
-        <p class="font-sourcesanspro text-base">
+        <p class="font-sourcesanspro text-base dark:text-white">
             Continue to read our latest posts.
         </p>
 

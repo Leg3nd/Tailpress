@@ -20,7 +20,7 @@
                                 echo '<h4 class="mt-4 skew-x-6 font-inter text-base md:text-xl font-bold text-white"><em>' . $category->name . '</em></h4>';
                                 echo '<p class="hidden skew-x-6 font-sourcesanspro text-sm text-white md:block">' . $category->description . '</p>';
                             echo '</div>';
-                            echo '<img src="' . $image . '" />'; 
+                            echo '<img src="' . $image . '" alt="' . $category->name . '" />'; 
                         echo '</a>';
                     echo '</div>';
                 } 
