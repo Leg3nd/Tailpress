@@ -20,3 +20,13 @@ window.addEventListener('load', function () {
       nav.classList.toggle('hidden')
       })
 })
+
+// Reading time as per https://dev.to/michaelburrows/calculate-the-estimated-reading-time-of-an-article-using-javascript-2k9l
+function readingTime() {
+      const text = document.getElementById("article").innerText;
+      const wpm = 225;
+      const words = text.trim().split(/\s+/).length;
+      const time = Math.ceil(words / wpm);
+      document.getElementById("time").innerText = time;
+    }
+    readingTime();

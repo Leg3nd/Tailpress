@@ -24,13 +24,13 @@
 					<div class="mr-4">
 						<i class="fa-sharp fa-solid fa-calendar-days text-citybreakgrey-400 dark:text-white"></i> <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-base font-sourcesanspro text-citybreakgrey-400 dark:text-white"><?php echo get_the_date(); ?></time> 					
 					</div>
-					<div class="">
-						<span class="text-base font-sourcesanspro text-citybreakgrey-400 dark:text-white"><i class="fa-solid fa-clock"></i> <?php echo reading_time(); ?></span>
+					<div class="text-base font-sourcesanspro text-citybreakgrey-400 dark:text-white">
+						<i class="fa-solid fa-clock"></i>&nbsp;<span id="time"></span> minute read
 					</div>
 				</div>
 			</header>
 
-			<div class="entry-content md:w-10/12 xl:w-8/12 mx-auto font-sourcesanspro dark:text-white">
+			<div id="article" class="entry-content md:w-10/12 xl:w-8/12 mx-auto font-sourcesanspro dark:text-white">
 				<?php the_content(); ?>
 
 				<?php
