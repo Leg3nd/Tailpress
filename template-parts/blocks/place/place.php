@@ -89,7 +89,7 @@ $instagram = get_field( 'instagram' );
     <div class="flex flex-col py-2 md:p-4 text-base font-sourcesanspro dark:text-white">
         <?php the_field('body'); ?>
     </div>
-    <div class="flex justify-between py-2 md:p-4">
+    <div class="flex justify-between md:px-4">
         <div class="text-left">
             <h5 class="dark:text-white">Discover more</h5>
                 <?php if( get_field('website') ): ?>
@@ -113,7 +113,7 @@ $instagram = get_field( 'instagram' );
 
     ?>
     <?php if( $img_acf_caption ){ ?>
-    <p class="text-xs text-citybreakgrey-200 text-right font-sourcesanspro mr-4"><?php echo $img_acf_caption; ?></p>
+    <p class="text-xs text-citybreakgrey-200 text-right font-sourcesanspro md:mr-4"><?php echo $img_acf_caption; ?></p>
     <?php } ?>
 
     <hr class="mb-4"/>

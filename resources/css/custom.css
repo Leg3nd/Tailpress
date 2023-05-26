@@ -17,7 +17,7 @@ article > *:not(.entry-content),
     }
 
     h4 {
-        @apply text-2xl font-inter text-citybreakteal-500 font-semibold italic my-4;
+        @apply text-2xl font-inter text-citybreakteal-500 font-semibold italic md:my-4;
     }
 
     h5 {
