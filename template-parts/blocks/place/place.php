@@ -37,8 +37,8 @@ $instagram = get_field( 'instagram' );
     <div class="flex flex-row py-2 md:p-4">
         <div class="basis-2/3 text-left">
             <h6 class="text-base font-sourcesanspro">
-                <a href="<?php the_field('google_map'); ?>" class="no-underline text-citybreakteal-500 hover:underline">
-                    <i class="fa-solid fa-location-dot text-citybreakteal-500"></i>&nbsp;
+                <a href="<?php the_field('google_map'); ?>" class="no-underline text-citybreakteal-500 dark:text-citybreakteal-200 hover:underline">
+                    <i class="fa-solid fa-location-dot text-citybreakteal-500 dark:text-citybreakteal-200"></i>&nbsp;
                     <?php the_field('address'); ?>
                 </a>
             </h6>
@@ -93,18 +93,18 @@ $instagram = get_field( 'instagram' );
         <div class="text-left">
             <h5 class="dark:text-white">Discover more</h5>
                 <?php if( get_field('website') ): ?>
-                    <a href="<?php the_field('website'); ?>"><i class="fa-solid fa-square-arrow-up-right text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                    <a href="<?php the_field('website'); ?>"><i class="fa-solid fa-square-arrow-up-right text-2xl text-citybreakteal-500 dark:text-citybreakteal-200 hover:drop-shadow"></i></a>
                 <?php endif; ?>
                 <?php if( get_field('twitter') ): ?>
-                    <a href="<?php the_field('twitter'); ?>"><i class="fa-brands fa-square-twitter text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                    <a href="<?php the_field('twitter'); ?>"><i class="fa-brands fa-square-twitter text-2xl text-citybreakteal-500 dark:text-citybreakteal-200 hover:drop-shadow"></i></a>
                 <?php endif; ?>
                 <?php if( get_field('instagram') ): ?>
-                    <a href="<?php the_field('instagram'); ?>"><i class="fa-brands fa-square-instagram text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                    <a href="<?php the_field('instagram'); ?>"><i class="fa-brands fa-square-instagram text-2xl text-citybreakteal-500 dark:text-citybreakteal-200 hover:drop-shadow"></i></a>
                 <?php endif; ?>
         </div>
         <div class="text-right">
             <h5 class="dark:text-white">Share</h5>
-                <a href="#"><i class="fa-sharp fa-solid fa-square-share-nodes text-2xl text-citybreakteal-500 hover:drop-shadow"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-square-share-nodes text-2xl text-citybreakteal-500 dark:text-citybreakteal-200 hover:drop-shadow"></i></a>
         </div>
     </div>
     <?php

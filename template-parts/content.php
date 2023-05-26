@@ -14,7 +14,7 @@
 				</div>
 			</div> 
 			<div class="flex px-4 pb-4">
-				<p class="text-base font-sourcesanspro dark:text-white"><?php the_excerpt(); ?></p>
+				<p class="text-base font-sourcesanspro dark:text-white"><?php echo strip_tags( $post->post_excerpt ); ?></p>
 			</div>
 		</a>
 

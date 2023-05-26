@@ -12,7 +12,7 @@
 				?>
 				<div id="post-<?php the_ID(); ?>">
 					<header class="entry-header mb-4">
-						<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 md:text-4xl mb-1"><?php the_title(); ?></h2>
+						<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 dark:text-citybreakteal-200 md:text-4xl mb-1"><?php the_title(); ?></h2>
 					</header>
 					<div class="font-sourcesanspro text-base dark:text-white">
 						<?php the_content(); ?>
