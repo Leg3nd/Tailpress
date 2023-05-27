@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="container flex justify-center">
-            <p class="text-white text-sm">&copy; Citybreak <?php echo date('Y'); ?> | <a href="#" class="text-white underline hover:no-underline">Terms</a> | <a href="#" class="text-white underline hover:no-underline">Privacy</a> | <a href="#" class="text-white underline hover:no-underline">Cookies</a></p>
+            <p class="text-white text-sm">&copy; Citybreak <?php echo date('Y'); ?> | <a href="/privacy" class="text-white underline hover:no-underline">Privacy</a></p>
         </div>        
     </footer>
 
