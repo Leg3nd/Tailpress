@@ -16,6 +16,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
+	<!-- Osano Consent Management + Google Consent mode pre script -->
+	<script>
+	window.dataLayer = window.dataLayer ||[];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('consent','default',{
+		'ad_storage':'denied',
+		'analytics_storage':'denied',
+		'wait_for_update': 500
+	});
+	gtag("set", "ads_data_redaction", true);
+	</script>
+
 	<!-- Osano Consent Management -->
 	<script src="https://cmp.osano.com/AzZmNoTfSneiZ72W/5ec4b600-0518-43be-b9ef-a61e163d89bc/osano.js"></script>
 
