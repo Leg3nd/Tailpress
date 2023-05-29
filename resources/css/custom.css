@@ -5,27 +5,27 @@ article > *:not(.entry-content),
 
 .entry-content, .block-editor-block-list__layout {
     h1 {
-        @apply text-5xl font-inter text-citybreakteal-500 font-semibold italic my-8;
+        @apply text-5xl font-inter text-citybreakteal-500 dark:text-citybreakteal-200 font-semibold italic my-8;
     }
 
     h2 {
-        @apply text-4xl font-inter text-citybreakteal-500 font-semibold italic my-4;
+        @apply text-4xl font-inter text-citybreakteal-500 dark:text-citybreakteal-200 font-semibold italic my-4;
     }
 
     h3 {
-        @apply text-3xl font-inter text-citybreakteal-500 font-semibold italic my-4;
+        @apply text-3xl font-inter text-citybreakteal-500 dark:text-citybreakteal-200 font-semibold italic my-4;
     }
 
     h4 {
-        @apply text-2xl font-inter text-citybreakteal-500 font-semibold italic md:my-4;
+        @apply text-2xl font-inter text-citybreakteal-500 dark:text-citybreakteal-200 font-semibold italic md:my-4;
     }
 
     h5 {
-        @apply text-2xl font-sourcesanspro;
+        @apply text-2xl dark:text-white font-sourcesanspro;
     }
 
     h6 {
-        @apply text-base font-sourcesanspro;
+        @apply text-base dark:text-white font-sourcesanspro;
     }
 
     .microcontent h4 {
@@ -34,14 +34,14 @@ article > *:not(.entry-content),
 
     p, ul, ol {
         a {
-            @apply text-citybreakteal-500 underline;
+            @apply text-citybreakteal-500 dark:text-citybreakteal-200 underline;
 
             &:hover {
                 @apply no-underline;
             }
         }
 
-        @apply mb-4 text-base font-sourcesanspro;
+        @apply mb-4 text-base font-sourcesanspro dark:text-white;
     }
 
     ul:not(.block-editor-block-variation-picker__variations) {
