@@ -1,7 +1,7 @@
 <!-- Start of subscribe row -->
-<div class="w-full py-5 bg-citybreakteal-500 dark:bg-citybreakteal-600">
+<div class="w-full py-5 bg-citybreakteal-500 dark:bg-citybreakgrey-600">
     <div class="container">
-        <div class="flex flex-col my-5">
+        <div class="flex flex-col lg:w-1/2 my-5">
             <h3 class="text-3xl font-semibold italic font-inter text-white">
                 <em>Subscribe to our newsletter</em>
             </h3>
@@ -24,7 +24,7 @@
                         <div style="position: absolute; left: -5000px;" aria-hidden="true">
                             <input type="text" name="b_3fd30817b504e5e809b50b622_b97c9ae1cf" tabindex="-1" value="">
                         </div>
-                        <button class="rounded-none font-sourcesanspro text-citybreakteal-600 bg-white hover:bg-citybreakteal-600 hover:text-white p-2" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe for updates</button>
+                        <button class="rounded-none font-sourcesanspro text-citybreakteal-600 bg-white dark:bg-citybreakteal-600 dark:hover:bg-citybreakteal-800 hover:bg-citybreakteal-600 dark:text-white hover:text-white p-2" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe for updates</button>
                     </div>
                 </form>
             </div>
