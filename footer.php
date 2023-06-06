@@ -15,7 +15,7 @@
         </div>
         <div class="container flex flex-wrap flex-row justify-between mx-auto">
             <div class="w-1/2 md:w-1/4 p-2">
-                <h5 class="text-white text-xl">Subscribe</h5>
+                <h5 class="text-white text-xl font-inter"><em>Subscribe</em></h5>
                     <!-- Begin Mailchimp Signup Form -->
                     <div id="mc_embed_signup">
                         <form action="https://citybreak.us21.list-manage.com/subscribe/post?u=3fd30817b504e5e809b50b622&amp;id=b97c9ae1cf&amp;f_id=0099b3e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
@@ -41,7 +41,7 @@
                     <!--End mc_embed_signup-->
             </div>
             <div class="w-1/2 md:w-1/4 p-2">
-            <h5 class="text-white text-xl">Top destinations</h5>   
+            <h5 class="text-white text-xl font-inter"><em>Top destinations</em></h5>   
             <?php 
                 $args = array(
                 'orderby' => 'name',
@@ -65,7 +65,7 @@
             ?>           
             </div>
             <div class="w-1/2 md:w-1/4 p-2">
-                <h5 class="text-white text-xl">Latest posts</h5>
+                <h5 class="text-white text-xl font-inter"><em>Latest posts</em></h5>
                 <?php 
                 // the query
                 $the_query = new WP_Query( array(
@@ -89,7 +89,7 @@
 
             </div>
             <div class="w-1/2 md:w-1/4 p-2">
-                <h5 class="text-white text-xl">About</h5>
+                <h5 class="text-white text-xl font-inter"><em>About</em></h5>
                 <ul class="list-none">
                     <li class="my-1"><a href="/who-we-are" class="text-citybreakteal-500 no-underline hover:underline">Who we are</a></li>
                     <li class="my-1"><a href="/how-we-work" class="text-citybreakteal-500 no-underline hover:underline">How we work</a></li>
