@@ -4,7 +4,7 @@
 	</div>
 </div>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article itemscope itemtype ="http://schema.org/TouristDestination" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="w-full">
 		<div class="flex flex-col container my-8 mx-auto">

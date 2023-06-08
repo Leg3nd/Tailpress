@@ -31,12 +31,12 @@ $instagram = get_field( 'instagram' );
             echo wp_get_attachment_image( $image, $size );
         } ?>
         <div class="absolute left-5 bottom-5 bg-citybreakteal-500 -skew-x-6 w-3/4 z-10 px-1 py-1">
-            <h4 class="text-base text-white skew-x-6 font-inter"><em><?php the_field('title'); ?></em></h4>
+            <h4 itemprop="name" class="text-base text-white skew-x-6 font-inter"><em><?php the_field('title'); ?></em></h4>
         </div>
     </div>
     <div class="flex flex-row py-2 md:p-4">
         <div class="basis-2/3 text-left">
-            <h6 class="text-base font-sourcesanspro">
+            <h6 itemprop="address" class="text-base font-sourcesanspro">
                 <a href="<?php the_field('google_map'); ?>" class="no-underline text-citybreakteal-500 dark:text-citybreakteal-200 hover:underline">
                     <i class="fa-solid fa-location-dot text-citybreakteal-500 dark:text-citybreakteal-200"></i>&nbsp;
                     <?php the_field('address'); ?>
