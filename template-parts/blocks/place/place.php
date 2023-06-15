@@ -95,7 +95,7 @@ $instagram = get_field( 'instagram' );
                 <?php if(empty($website) && empty($twitter) && empty($instagram)) : ?>
 
                 <?php else: ?>
-                <h5 class="dark:text-white">Any field is filled</h5>
+                <h5 class="dark:text-white">Discover more</h5>
                 <?php endif; ?>
 
                     <?php if( get_field('website') ): ?>
@@ -109,10 +109,10 @@ $instagram = get_field( 'instagram' );
                     <?php endif; ?>
             </div>
 
-        <div class="text-right">
+        <!-- <div class="text-right">
             <h5 class="dark:text-white">Share</h5>
                 <a href="#"><i class="fa-sharp fa-solid fa-square-share-nodes text-2xl text-citybreakteal-500 dark:text-citybreakteal-200 hover:drop-shadow"></i></a>
-        </div>
+        </div> -->
     </div>
     <?php
     $img_acf = get_field('photo');
