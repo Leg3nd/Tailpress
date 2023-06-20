@@ -37,8 +37,8 @@ $instagram = get_field( 'instagram' );
     <div class="flex flex-row py-2 md:p-4">
         <div class="basis-2/3 text-left">
             <h6 itemprop="address" class="text-base font-sourcesanspro">
+                <i class="fa-solid fa-location-dot text-citybreakteal-500 dark:text-citybreakteal-200"></i>&nbsp;
                 <a href="<?php the_field('google_map'); ?>" class="no-underline text-citybreakteal-500 dark:text-citybreakteal-200 hover:underline">
-                    <i class="fa-solid fa-location-dot text-citybreakteal-500 dark:text-citybreakteal-200"></i>&nbsp;
                     <?php the_field('address'); ?>
                 </a>
             </h6>

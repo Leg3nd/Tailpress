@@ -7,7 +7,7 @@
                 </div>
                 <div class="flex p-4">
                     <div class="flex-grow p-1">
-                        <h6 class="text-base font-bold text-citybreakgrey-300 font-sourcesanspro"><?php echo get_the_date( 'j M Y' ); ?></h6>
+                        <h6 class="text-base font-bold text-citybreakgrey-300 font-sourcesanspro">Posted on <?php echo get_the_date( 'j M Y' ); ?></h6>
                     </div>
                     <!-- <div class="p-1">
                         <i class="fa-solid fa-utensils text-citybreakteal-500"></i>
