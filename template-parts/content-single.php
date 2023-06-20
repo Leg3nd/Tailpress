@@ -22,7 +22,7 @@
 				<h2 class="entry-title text-2xl font-inter text-citybreakteal-500 dark:text-citybreakteal-200 md:text-4xl my-2"><em><?php the_title(); ?></em></h2>
 				<div class="flex flex-col md:flex-row">
 					<div class="mr-4">
-						<i class="fa-sharp fa-solid fa-calendar-days text-citybreakgrey-400 dark:text-white"></i> <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-base font-sourcesanspro text-citybreakgrey-400 dark:text-white"><?php echo get_the_date(); ?></time> 					
+						<i class="fa-sharp fa-solid fa-calendar-days text-citybreakgrey-400 dark:text-white"></i> <time datetime="<?php echo get_the_date( 'c' ); ?>" class="text-base font-sourcesanspro text-citybreakgrey-400 dark:text-white"><?php echo get_the_date(); ?></time> 					
 					</div>
 					<div class="text-base font-sourcesanspro text-citybreakgrey-400 dark:text-white">
 						<i class="fa-solid fa-clock"></i>&nbsp;<span id="time"></span> minute read
