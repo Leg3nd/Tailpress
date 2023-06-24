@@ -58,7 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<header>
 
-		<div class="w-full p-4 bg-citybreakteal-500">
+		<div class="w-full fixed w-full z-20 top-0 p-4 bg-citybreakteal-500">
 			<nav class="container">
 				<!-- Flex Container -->
 				<div class="flex items-center justify-between">
