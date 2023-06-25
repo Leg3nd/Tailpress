@@ -1103,6 +1103,10 @@ input:checked + .toggle-bg {
   top: 1.5rem;
 }
 
+.top-3\/4 {
+  top: 75%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -2685,6 +2689,10 @@ article > *:not(.entry-content),
 }
 
 @media (min-width: 782px) {
+  .md\:top-1\/2 {
+    top: 50%;
+  }
+
   .md\:order-2 {
     order: 2;
   }
