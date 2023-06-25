@@ -15,7 +15,7 @@ $posts = get_posts(array(
 
 if( $posts ): ?>
 
-    <div id="default-carousel" class="relative" data-carousel="slide">
+    <div id="default-carousel" class="relative z-10" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden md:h-96">
             

@@ -131,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	</header>
 
-	<div id="content" class="site-content flex-grow dark:bg-citybreakteal-800">
+	<div id="content" class="site-content flex-grow dark:bg-citybreakteal-800 mt-92px">
 
 
 		<?php do_action( 'tailpress_content_start' ); ?>
